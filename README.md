@@ -9,6 +9,7 @@ Submission for the Developer (Client Web + Martech) assignment. Three files, mat
 - `task3-integration-writeup.md` — how the form connects to HubSpot, WhatsApp, and Google Ads
 
 ## Running the landing page
+<img width="1906" height="901" alt="image" src="https://github.com/user-attachments/assets/3093a924-d7aa-4d4c-ba66-0eb1c31f0696" />
 
 Just open `task2-landing-page/index.html` in a browser no server or build step needed. To see the tracking fire, open the console, fill in the form, and submit. The `consultation_form_submitted` push will show up in `window.dataLayer`.
 
