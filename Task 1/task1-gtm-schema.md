@@ -17,7 +17,7 @@ Quick note — the JSON example in the brief uses single quotes around keys, whi
 
 ## Tracking the booking funnel
 
-OrthoNow's booking form is a single-page component — it swaps sections in and out, the URL never changes, nothing reloads. GTM only reacts to things like DOM events, URL changes, or dataLayer pushes, and there's no browser event that means "user just finished step 2 of a form the JS is managing internally." So GTM genuinely can't see step progress on its own here. The front-end dev has to add a `dataLayer.push()` inside each step's "next" handler, right after validation passes, and GTM just listens for that via a Custom Event trigger. It's not detecting anything — it's just picking up what the dev already sent it.
+OrthoNow's booking form is a single-page component it swaps sections in and out, the URL never changes, nothing reloads. GTM only reacts to things like DOM events, URL changes, or dataLayer pushes, and there's no browser event that means "user just finished step 2 of a form the JS is managing internally." So GTM genuinely can't see step progress on its own here. The front-end dev has to add a `dataLayer.push()` inside each step's "next" handler, right after validation passes, and GTM just listens for that via a Custom Event trigger. It's not detecting anything it's just picking up what the dev already sent it.
 
 **Step 1 — location + specialty selected:**
 ```json
